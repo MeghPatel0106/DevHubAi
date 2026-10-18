@@ -1,0 +1,27 @@
+{
+  "name": "devhub-ai",
+  "version": "1.0.0",
+  "description": "DevHub AI - AI-Powered Developer Career Management Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "build:client": "npm run build --prefix client"
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "node",
+    "express",
+    "mongodb",
+    "career-management",
+    "developer-portfolio",
+    "ai"
+  ],
+  "author": "DevHub AI Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
